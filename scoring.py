@@ -34,6 +34,8 @@ def score_model():
     # Save score
     with open(os.path.join(model_path, "latestscore.txt"), "w") as file:
         file.write(str(score))
+    
+    return score
 
 
 if __name__ == "__main__":
